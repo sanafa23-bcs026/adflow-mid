@@ -1,0 +1,29 @@
+(
+create table users (
+  id uuid primary key default uuid_generate_v4(),
+  name text,
+  email text unique,
+  password_hash text,
+  role text,
+  created_at timestamp default now()
+);
+
+-- Ads table
+create table ads (
+  id uuid primary key default uuid_generate_v4(),
+  user_id uuid,
+  title text,
+  description text,
+  status text,
+  publish_at timestamp,
+  expire_at timestamp
+);
+
+-- Payments table
+create table payments (
+  id uuid primary key default uuid_generate_v4(),
+  ad_id uuid,
+  amount numeric,
+  transaction_ref text,
+  status text
+);
