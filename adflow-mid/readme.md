@@ -1,11 +1,11 @@
 # AdFlow Pro – Mid-Term Project ✨
 
-**Team / Roll No:** FA23-BCS-024
+Roll No:** FA23-BCS-024
 **Tech Stack:** Next.js + Tailwind CSS | Node.js + Express | Supabase | Vercel
 
----
 
-## 1️⃣ Project Overview
+
+ 1️⃣ Project Overview
 
 AdFlow Pro is a sponsored listing marketplace with:
 
@@ -78,19 +78,19 @@ adflow-mid/
 cd server
 npm install
 npm run dev     # Start server at localhost:5000
-```
 
-### Frontend
 
-```
+ Frontend
+
+
 cd client
 npm install
 npm run dev     # Start frontend at localhost:3000
-```
 
----
 
-## 6️⃣ Core Tables
+
+
+ 6️⃣ Core Tables
 
 * users, seller_profiles, packages
 * ads, ad_media, payments
@@ -110,31 +110,22 @@ PATCH  /api/admin/ads/:id
 POST   /api/cron/publish-scheduled
 ```
 
----
 
-## 8️⃣ Ranking Formula
+8️⃣ Ranking Formula
 
 ```
 rankScore = (featured ? 50 : 0) + (packageWeight * 10) + freshnessPoints + adminBoost + verifiedSellerPoints
 ```
 
----
 
-## 9️⃣ Automation
+ 9️⃣ Automation
 
 * Publish scheduled ads hourly ⏱️
 * Expire outdated ads daily 🗑️
 * Notify users 48h before ad expiry 📩
 * DB & system health monitoring 💾
 
----
 
-## 🔟 Instructor Notes
 
-* Fully supports multi-role workflow & automation
-* Ready for deployment on Vercel + Supabase
-* Complete CRUD, package rules, ad status lifecycle implemented
-* Sample dataset: 15–25 ads
 
----
 
